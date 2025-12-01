@@ -15,7 +15,6 @@ def get_price():
         except ValueError:
             print("Invalid decimal number. Please try again.")
 
-
 def get_quantity():
     """Get and validate a quantity from user input"""
     while True:
@@ -37,17 +36,16 @@ def main():
         quantity = get_quantity()
         total = price * quantity
 
-        print("\nPRICE:")
-        print(f"{price:.2f}")
-        print("QUANTITY:")
-        print(f"{quantity}")
-        print("TOTAL :")
-        print(f"{total:.2f}\n")
+        print(f"\nPRICE: {price:.2f}")
+        print(f"QUANTITY: {quantity}")
+        print(f"TOTAL: {total:.2f}")
 
         again = input("Enter another line item? (y/n): ").strip().lower()
         if again != "y":
             break
+        print()
 
+    print()
     print("Bye!")
 
 if __name__ == "__main__":
