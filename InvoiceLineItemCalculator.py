@@ -2,7 +2,7 @@
 # CIS 261
 # Lab: Invoice Line Item Calculator
 
-defget_price():
+def get_price():
     """Get and validate a price from user input"""
     while True:
         value = input("Enter price: ")
